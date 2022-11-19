@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Fylo landing page with two column layout</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <!-- <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style> -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="public/output.css">
+  <script src="https://kit.fontawesome.com/c192eb268d.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <header>
+    <nav class="flex mobile:ml-5 mobile:mt-7 desktop:m-14 desktop:justify-between">
+      <div>
+        <img src="/images/logo.svg" alt="" class="mobile:h-6 desktop:h-12">
+      </div>
+      <div class="mobile:m-auto mobile:pl-12 font-raleways font-light text-desaturatedkblue mobile:text-xs desktop:text-xl desktop:my-auto">
+        <a href="" class="mobile:pr-5 desktop:pr-14">Features</a>
+        <a href="">Team</a>
+        <a href="" class="mobile:pl-5 desktop:pl-14">Sign In</a>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <div class="flex flex-col desktop:flex-row-reverse mt-24 desktop:justify-between desktop:mb-28">
+      <div>
+        <img src="/images/illustration-1.svg" alt="" class="mobile:h-56 desktop:h-96 desktop:mr-14 mx-auto">
+      </div>
+      <div class="desktop:my-auto desktop:ml-14 desktop:max-w-xl">
+        <h1 class="mobile:self-center mobile:text-center text-verydarkblue mobile:text-2xl mobile:font-opensans desktop:font-raleways desktop:text-4xl mobile:font-extrabold desktop:font-bold pt-10 mobile:px-6 mobile:leading-9 ">All your files in one secure location, accessible anywhere.</h1>
+        <p class="mobile:text-center pt-6 mobile:px-6 font-raleways mobile:text-sm desktop:text-base text-verydarkblue">Fylo stores your most important files in one secure location. Access them wherever you need, share and collaborate with friends, family, and co-workers.</p>
+        <input class="mt-9 placeholder:text-lightgray placeholder:font-raleways placeholder:text-xs mobile:block bg-white mobile:w-72 desktop:w-80 mobile:mx-auto border border-verydarkblue rounded-md py-2 pl-5 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm" placeholder="Enter your email..." type="text" name="search"/>
+        <button class="mt-4 mobile:block mobile:mx-auto mobile:w-72 desktop:w-52 px-auto py-3 bg-brightblue mobile:border rounded-md font-opensans font-bold text-xs text-lightgrayishblue desktop:shadow-md desktop:shadow-lightgray">Get Started</button>
+      </div>
+    </div>
+    <img src="/images/bg-curve-mobile.svg" alt="" class="mt-24 desktop:hidden">
+    <img src="/images/bg-curve-desktop.svg" alt="" class="mobile:hidden w-full">
+    <div class="flex flex-col bg-lightgrayishblue desktop:flex-row-reverse desktop:justify-between">
+      <div class="mt-10">
+        <img src="/images/illustration-2.svg" alt="" class="mobile:h-56 desktop:h-96 desktop:mr-14 mx-auto">
+      </div>
+      <div class="desktop:my-auto desktop:ml-14">
+        <h2 class="mobile:self-center mobile:text-center text-verydarkblue mobile:text-2xl mobile:font-opensans desktop:font-raleways desktop:text-4xl mobile:font-extrabold desktop:font-bold pt-10 mobile:px-6 mobile:leading-9">Stay productive, wherever you are</h2>
+        <p class="pt-6 mobile:px-6 font-raleways mobile:text-sm desktop:text-base desktop:max-w-xl text-verydarkblue">Never let location be an issue when accessing your files. Fylo has you covered for all of your file storage needs.</p>
+        <p class="pt-6 mobile:px-6 font-raleways mobile:text-sm desktop:text-base desktop:max-w-xl text-verydarkblue">Securely share files and folders with friends, family and colleagues for live collaboration. No email attachments required!</p>
+        <div class="flex mt-7 mobile:justify-center underline decoration-moderatecyan underline-offset-8 mb-10">
+          <h2 class="font-opensans text-sm text-moderatecyan pr-3">See how Fylo works</h2>
+          <img src="/images/icon-arrow.svg" alt="">
+        </div>
+        <figure class="">
+          <div class="shadow-md shadow-lightgray mobile:mx-10 bg-white p-5 mb-20 desktop:max-w-xs">
+            <img src="/images/icon-quotes.svg" alt="">
+            <blockquote>
+              <p class="font-raleways mobile:text-xs desktop:text-sm text-verydarkblue mt-5 mobile:leading-6 desktop:leading-6">Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has become a well-oiled collaboration machine.</p>
+            </blockquote>
+            <figcaption>
+              <div class="flex mt-5">
+                <div>
+                  <img src="/images/avatar-testimonial.jpg" alt="" class="h-9 rounded-full">
+                </div>
+                <div class="pl-3">
+                  <h3 class="font-opensans font-extrabold text-verydarkblue text-sm">Kyle Burton</h3>
+                  <p class="font-raleways text-xs text-desaturatedkblue">Founder & CEO, Huddle</p>
+                </div>
+              </div>
+            </figcaption>
+          </div>
+        </figure>
+      </div>
+    </div>
+    <div class="flex mobile:flex-col desktop:flex-row mobile:text-center bg-desaturatedkblue desktop:py-16 desktop:justify-between">
+      <div class="mobile:mt-12 font-raleways desktop:ml-14 desktop:max-w-sm">
+        <h2 class="font-bold mobile:text-lg desktop:text-2xl text-lightgrayishblue pb-4">Get early access today</h2>
+        <p class="text-sm text-lightgrayishblue mobile:px-12">It only takes a minute to sign up and our free starter tier is extremely generous. If you have any questions, our support team would be happy to help you.</p>
+      </div>
+      <div class="mt-6 mb-16 desktop:mr-40 desktop:my-auto">
+        <input class="placeholder:text-lightgray placeholder:font-raleways placeholder:text-xs block bg-white mobile:w-64 desktop:w-96 mx-auto border border-verydarkblue rounded-sm py-2 pl-3 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm" placeholder="email@example.com" type="text" name="search"/>
+        <button class="mt-4 block mobile:mx-auto mobile:w-64 desktop:w-48 px-auto py-3 bg-brightblue rounded-sm font-opensans text-xs text-lightgrayishblue">Get Started For Free</button>
+      </div>
+    </div>
+  </main>
+  <footer class="bg-verydarkblue desktop:py-10">
+    <div>
+      <img src="/images/logo 2.svg" alt="" class="pt-14 pl-10 h-28">
+    </div>
+    <div class="flex mobile:flex-col desktop:justify-between">
+      <div>
+        <div class="text-lightgrayishblue pt-10 pl-10">
+          <span class="flex pb-4"><img src="/images/icon-phone.svg" alt="" class="pr-5">Phone: +1-543-123-4567</span>
+          <span class="flex"><img src="/images/icon-email.svg" alt="" class="pr-5">example@fylo.com</span>
+        </div>
+      </div>
+      <div class="flex flex-col pl-10 mobile:pt-14 desktop:p-10 font-opensans text-lightgrayishblue">
+        <a href="" class="pb-3">About Us</a>
+        <a href="" class="pb-3">Jobs</a>
+        <a href="" class="pb-3">Press</a>
+        <a href="">Blog</a>
+      </div>
+      <div class="flex flex-col pl-10 pt-10 font-opensans text-lightgrayishblue">
+        <a href="" class="pb-3">Contact Us</a>
+        <a href="" class="pb-3">Terms</a>
+        <a href="" class="pb-3">Privacy</a>
+      </div>
+      <div class="flex text-lightgray mobile:py-12 desktop:p-10 mobile:justify-evenly">
+        <a href=""><i class="fab fa-facebook-f border border-lightgray p-3 rounded-full desktop:mr-5"></i></a>
+        <a href=""><i class="fab fa-twitter border border-lightgray p-3 rounded-full desktop:mr-5"></i></a>
+        <a href=""><i class="fab fa-instagram border border-lightgray p-3 rounded-full"></i></a>
+      </div>
+    </div>
+    
+  </footer>
+
+  <!-- 
+  <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">Your Name Here</a>.
+    </p>
+  </footer> -->
+</body>
+
+</html>
